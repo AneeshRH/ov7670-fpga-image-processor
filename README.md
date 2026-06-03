@@ -1,4 +1,3 @@
-````markdown
 # OV7670 Real-Time FPGA Image Processing System
 
 A fully hardware-accelerated real-time image processing pipeline implemented on FPGA using Verilog HDL. The system captures live video from an OV7670 camera module, performs selectable convolution-based image filtering in hardware, and outputs the processed video stream to a VGA display at 640×480 resolution.
@@ -13,11 +12,11 @@ The OV7670 camera continuously streams pixel data into the FPGA, where each RGB 
 
 The architecture emphasizes:
 
-- Fully parallel hardware image processing
-- Real-time convolution filtering
-- Multi-clock domain synchronization
-- Efficient BRAM-based frame buffering
-- Modular and scalable RTL design
+* Fully parallel hardware image processing
+* Real-time convolution filtering
+* Multi-clock domain synchronization
+* Efficient BRAM-based frame buffering
+* Modular and scalable RTL design
 
 ---
 
@@ -65,7 +64,7 @@ The architecture emphasizes:
                          │
                          ▼
                  VGA Display Output
-````
+```
 
 ---
 
@@ -157,7 +156,7 @@ The active filter is selected using the 3-bit `i_kernel_sel` input.
 
 # Development Environment
 
-## Hardware
+### Hardware
 
 * Xilinx 7-Series FPGA Board
 
@@ -166,7 +165,7 @@ The active filter is selected using the 3-bit `i_kernel_sel` input.
 * OV7670 Camera Module (without FIFO)
 * VGA-Compatible Monitor
 
-## Software
+### Software
 
 * Xilinx Vivado 2020.x or later
 
@@ -226,6 +225,3 @@ The active filter is selected using the 3-bit `i_kernel_sel` input.
 
 This project is intended for educational and research purposes.
 Please credit the original author when reusing or modifying the design.
-
-```
-```
